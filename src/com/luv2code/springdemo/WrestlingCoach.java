@@ -19,8 +19,12 @@ public class WrestlingCoach implements Coach {
 	@Override
 	public String getDailyFortune() {
 		
-		
 		return fortuneService.getFortune();
+	}
+	
+	@Override
+	public String getItem() {
+		return fortuneService.getItem();
 	}
 
 }

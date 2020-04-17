@@ -5,4 +5,6 @@ public interface Coach {
 	
 	public String getDailyFortune();
 
+	public String getItem();
+
 }
