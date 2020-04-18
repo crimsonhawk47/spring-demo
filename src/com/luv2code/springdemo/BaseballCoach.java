@@ -1,6 +1,8 @@
 package com.luv2code.springdemo;
 
 public class BaseballCoach implements Coach{
+	private FortuneService fortuneService;
+	
 	@Override
 	public String getDailyWorkout() {
 		return "Spend 30 minutes in the batting cage";
@@ -9,7 +11,13 @@ public class BaseballCoach implements Coach{
 	@Override
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
-		return null;
+		return fortuneService.getFortune();
+	}
+
+	@Override
+	public String getItem() {
+		// TODO Auto-generated method stub
+		return fortuneService.getItem();
 	}
 
 }
